@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Video Acak</title>
+</head>
+<body>
+    <h1>URL Video Acak</h1>
+    <p id="video-url-container">
+        <!-- URL video acak akan ditampilkan di sini -->
+    </p>
+
+    <script>
+        // Daftar URL video yang ingin ditampilkan secara acak
+        const videoUrls = [
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Contoh URL YouTube
+            'https://www.youtube.com/watch?v=3JZ_D3ELwOQ',
+            'https://www.youtube.com/watch?v=9bZkp7q19f0',
+            'https://vimeo.com/76979871', // Contoh URL Vimeo
+            // Tambahkan URL video lainnya sesuai kebutuhan
+        ];
+
+        // Pilih URL video secara acak
+        const indexAcak = Math.floor(Math.random() * videoUrls.length);
+        const videoUrlAcak = videoUrls[indexAcak];
+
+        // Tampilkan URL video yang dipilih acak di elemen <p>
+        document.getElementById('video-url-container').textContent = videoUrlAcak;
+    </script>
+</body>
+</html>
